@@ -1,32 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="es">
 	<head>
-<!--https://www.youtube.com/watch?v=59pex8k8Xr8-->
-<!--https://getbootstrap.com/docs/5.0/layout/grid/-->
-
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--bootstrap CSS-->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
 				
 				<title>Contaminación ambiental</title>
 				
 				<link rel="icon" href="images/favicon.ico">
 				<style>
-					.rem2{font-size: 2rem;}
-					.rem15{font-size: 1.5rem;}
-					.rem08{font-size:0.8rem;}
-					<!--Pe de páxina #47b58a-->
-					.bg-pe{background-color:$teal-600;}
-					.tamanoImaxes{ height:2rem; width:auto;}
+					.rem2{font-size: 2em;}
+					.rem15{font-size: 1.5em;}
+					.rem08{font-size:0.8em;}
+					.bg-pe{background-color:#47b58a;
+					color:white;}
+					.tamTriangulo {height:auto; width:16em;}
+					.tamanoImaxes {height:auto; width:40px;}
 				</style>
 	</head>
 	<body>
-	
+						<!--Pe de páxina #47b58a-->
+					<!--.bg-pe{background-color:$teal-600;}-->
 <!--Navegador na cabeceira da páxina, onde se enlaza coas outras páxinas -->
-		<div class="container-fluid pt-5">
+		<div class="container-fluid pt-5 bg-pe">
 			<div class="row">
 			<a href="indexBOOT.html">
 			<div class="col-12 bg-success">Inicio</div>
@@ -46,16 +44,16 @@
 			</div>
 		</div>
 
+<div class="container">
 <!--Título da páxina-->
 				<div class="container text-center py-5">
 					<h1 class="display-1">CONTAMINACIÓN AMBIENTAL</h1>
 				</div>
-			</div>
 
 <!--Frase de autor-->
 	<div class="container my-5">
 		<blockquote class="blockquote">
-			<p class="rem2 mx-5">Vivimos na Terra como se tuvésemos outra á que ir.</p>
+			<p class="rem2 mx-5">Vivimos na Terra como se tivésemos outra á que ir.</p>
 		</blockquote>
 		<figcaption class="blockquote-footer rem15 mx-5">Terry Sweatingen</figcaption>
 	</div>
@@ -87,7 +85,7 @@
 				<div class="container">
 				<div class="row">
 				<div class="col-12 col-lg-4 col-md-6">
-					<img src="images/saude_toxivo.png" alt="Peligro-toxicidade"/>
+					<img src="images/saude_toxivo.png" class="tamTriangulo" alt="Peligro-toxicidade" />
 					<p>Sobre a saúde:</p>
 						<ul>
 							<li>Enfermidades respiratorias</li>
@@ -98,7 +96,7 @@
 						</ul>
 				</div>
 				<div class="col-12 col-lg-4 col-md-6">
-					<img src="images/saude_territorio.png" alt="Peligro-toxicidade"/>
+					<img src="images/saude_territorio.png" class="tamTriangulo" alt="Peligro-toxicidade" />
 						<p>Sobre o territorio:</p>
 						<ul>
 							<li>O cambio climático</li>
@@ -109,37 +107,40 @@
 						</ul>
 				</div>
 				<div class="col-12 col-lg-4">
-					<video controls autoplay muted loop><source src="Audiovisual/efectos_negativos.mp4" type="video/mp4">Meditando en pandemia.</video>
+					<video controls autoplay muted loop class="tamTriangulo"><source src="Audiovisual/efectos_negativos.mp4" type="video/mp4">Meditando en pandemia.</video>
 				</div>
 				</div>
 				</div>
 			</div>
+</div>
 
 <!--Pé de páxina -->
-		<div class="container-fluid bg-success.bg-gradient">
+		<div class="container-fluid bg-pe">
 			<div class="container py-3">
 			<div class="row justify-content-between">
 			<div class="col-12 col-md-4">
-				<p class="rem08"> Avenue de Lorraine 78110 Le Vésinet +33 627 21 35 69</p>
+				<p class="rem08 text-center"> Avenue de Lorraine 78110 Le Vésinet +33 627 21 35 69</p>
+			</div>
+			<div class="col-12 col-md-4 ">
+				<p class="rem08 text-center">Copyright 2021 Rosa Bitxi ©</p>
 			</div>
 			<div class="col-12 col-md-4">
-				<p class="rem08">Copyright 2021 Rosa Bitxi ©</p>
-			</div>
-			<div class="col-12 col-md-4">
-				<img src="images/pe_polar.png" class="tamanoImaxes rounded-float-end" alt="Logo-WWF"/>
-				<img src="images/pe_planeta.png" class="tamanoImaxes rounded-float-end" alt="Logo-Greenpeace"/>
-				<img src="images/pe_loro.png" class="tamanoImaxes rounded-float-end" alt="Logo-BirdLife"/>
+			<p class="text-right">
+				<img src="images/pe_polar.png" class="tamanoImaxes" alt="Logo-WWF"/>
+				<img src="images/pe_planeta.png" class="tamanoImaxes" alt="Logo-Greenpeace"/>
+				<img src="images/pe_loro.png" class="tamanoImaxes" alt="Logo-BirdLife"/>
 				<!--Estes logos son xerados porque me validou CSS version 3-->
-				<img src="images/vcss.gif" class="tamanoImaxes rounded-float-end" alt="¡CSS Válido!" />
-				<img src="images/vcss-blue.gif" class="tamanoImaxes rounded-float-end" alt="¡CSS Válido!" />
+				<img src="images/vcss.gif" class="tamanoImaxes" alt="¡CSS Válido!" />
+				<img src="images/vcss-blue.gif" class="tamanoImaxes" alt="¡CSS Válido!" />
+			</p>
 			</div>
 		</div>
 		</div>
 	</div>
-
+	
 <!--Cousas de bootstrap-->
 		<script src="js/jquery-3.5.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 	</body>
 </html>
