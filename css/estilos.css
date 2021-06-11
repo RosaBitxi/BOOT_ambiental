@@ -1,0 +1,43 @@
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+/* Reseteo inicial de todas as propiedades */
+*{
+  margin: 0px;
+  padding:0px;
+}
+
+
+/* Para toda a páxina*/
+body {
+	/*background-image: url("../images/fondo_blanco.png");
+	background-repeat:repeat;*/
+	background-color:#afafaf0d;
+	/*color:#3b9b9c;*/
+
+}
+
+/*Estilos utilizados no index*/
+.rem2{font-size: 2em;}
+.rem15{font-size: 1.5em;}
+.rem13 {font-size: 1.3em;}
+.rem08{font-size:0.8em;}
+.bg-pe{background-color:#47b58a;}
+.letraBranca{color:white;}
+.tamTriangulo {height:auto; width:16em;}
+.tamanoImaxes {height:auto; width:40px;}
+.tamanoLogo {height:auto; width:3em;}
+.boton:link{text-decoration:none;}
+.boton:active {color:#346c9c; text-decoration:none;}
+.boton:hover {color:white;box-shadow:inset 0 0 20px #346c9c, 0 0 20px #346c9c;transition:all 0.2s ease;}
+.pegado {margin:0px auto; top:0px; position:fixed; z-index:90;}
+.debuxoUL {list-style-position: inside;list-style-image: url("../images/ul.png");}
+
+
+
+
+
